@@ -1102,7 +1102,7 @@ ul.list-our-team li {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-left: 108px;
+    padding-left: 108px;
   }
 
   .logo-footer {
@@ -1225,6 +1225,7 @@ ul.list-our-team li {
   .footer-container {
     justify-content: flex-start;
     margin: 0 auto;
+    padding-left: 15px;
   }
 
   .left-container {
@@ -1241,6 +1242,10 @@ ul.list-our-team li {
 
   .form-input {
     max-width: 264px;
+    opacity: 1;
   }
 
+  .form-input::placeholder {
+    opacity: 1;
+  }
 }
