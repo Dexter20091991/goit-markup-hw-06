@@ -550,6 +550,9 @@ ul.list-our-team li {
   text-transform: uppercase;
   display: inline-block;
   margin-bottom: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .second-part {
@@ -567,10 +570,17 @@ ul.list-our-team li {
 
 .left-container {
   /* margin-right: 120px; */
+
+  margin-bottom: 72px;
 }
 
 .social-container-footer {
-  max-width: 208px;
+  /* max-width: 208px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 72px;
+
 
 }
 
@@ -617,8 +627,11 @@ ul.list-our-team li {
 }
 
 .footer-form-container {
-  height: 80px;
-  max-width: 453px;
+  /* height: 80px; */
+  /* max-width: 453px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   /* margin-left: 80px; */
 }
 
@@ -654,7 +667,7 @@ ul.list-our-team li {
 }
 
 .form-input {
-  min-width: 264px;
+  min-width: 288px;
   max-height: 40px;
   border: 1px solid #FFF;
   background-color: transparent;
@@ -667,11 +680,13 @@ ul.list-our-team li {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   color: #ffffff;
+  opacity: 0.3;
 }
 
 .form-input::placeholder {
   color: #FFFFFF;
   font-size: 12px;
+  opacity: 0.6;
 }
 
 .email-btn {
@@ -691,7 +706,7 @@ ul.list-our-team li {
   border: none;
   border-radius: 4px;
   padding: 8px 24px;
-  align-self: flex-end;
+  align-self: center;
 }
 
 .email-btn:hover,
@@ -1072,7 +1087,35 @@ ul.list-our-team li {
     flex-basis: calc((100% - 24px) / 2);
   }
 
+  /* FOOTER */
+  .footer-content {}
 
+  .footer-form {
+    flex-direction: row;
+  }
+
+  .left-container {
+    margin-right: 24px;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 108px;
+  }
+
+  .logo-footer {
+    justify-content: flex-start;
+  }
+
+  .footer-form-container {
+    align-items: flex-start;
+  }
+
+  .form-input {
+    min-width: 264px;
+  }
 
 }
 
@@ -1156,6 +1199,11 @@ ul.list-our-team li {
   }
 
   /* OUR-PORTFOLIO */
+
+  .portfolio-content {
+    padding: 120px 0;
+  }
+
   .portfolio-list {
     display: flex;
     flex-direction: row;
@@ -1165,7 +1213,34 @@ ul.list-our-team li {
   }
 
   .portfolio-item {
-    flex-basis: calc((100% - 24px) / 4);
+    flex-basis: calc((100% - 48px) / 3);
+  }
+
+  /* FOOTER */
+
+  .footer-content {
+    padding: 100px 0;
+  }
+
+  .footer-container {
+    justify-content: flex-start;
+    margin: 0 auto;
+  }
+
+  .left-container {
+    margin-right: 120px;
+    margin-bottom: 0;
+  }
+
+  .social-container-footer {
+    margin-bottom: 0;
+    align-items: flex-start;
+    margin-right: 80px;
+
+  }
+
+  .form-input {
+    max-width: 264px;
   }
 
 }
